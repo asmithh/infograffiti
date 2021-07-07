@@ -12,7 +12,9 @@
 - Copy `creds_sample.yaml` to `creds.yaml`. This ensures 
 - Put your credentials in the appropriate places in `creds.yaml`. This ensures that you won't upload your credentials to Git accidentally!
 - Choose a subreddit to explore! Put its name in the appropriate place in `example.py`. 
-- Choose a function to run in `example.py`, uncomment, and run it!
-- Watch the magic happen!
+- Add the search term. Remember, `|` means OR and `&` means AND!
+- Run `example.py` and collect some data! This might take a while. 
+- For instructions on how to get something to run on your computer without you [jiggling the mouse](https://www.reddit.com/r/redneckengineering/comments/ob3qj9/keeping_computer_awake_while_it_compiles_code/?utm_medium=android_app&utm_source=share) every so often, try [this](https://linuxize.com/post/how-to-use-linux-screen/)
+- Take a look at dataviz.ipynb and explore the examples. What do you want to know about your data?
 
 
