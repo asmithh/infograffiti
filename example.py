@@ -28,8 +28,8 @@ REDDIT_ID = creds['id']
 REDDIT_SECRET = creds['secret']
 APP_NAME = creds['app_name']
 
-MY_SUBREDDIT = 'legaladvice'
-SEARCH_TERM = 'facebook|google|amazon|apple|netflix'
+MY_SUBREDDIT = 'wallstreetbets'
+SEARCH_TERM = 'gamestop|facebook|GME'
 reddit = praw.Reddit(client_id=REDDIT_ID, client_secret=REDDIT_SECRET, user_agent=APP_NAME)
 subreddit = reddit.subreddit(MY_SUBREDDIT)
 
@@ -105,7 +105,7 @@ def get_posts_over_last_n_days(reddit_instance, subreddit, search_term, n_days):
     }
     pickle.dump(d, open('reddit_info_dict_final.pkl', 'wb'))
      
-get_posts_over_last_n_days(reddit, MY_SUBREDDIT, SEARCH_TERM, 365)
+get_posts_over_last_n_days(reddit, MY_SUBREDDIT, SEARCH_TERM, 10)
 
 
 
